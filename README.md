@@ -1,6 +1,6 @@
 # Auto Lawn Solutions
 
-Brochure site for Auto Lawn Solutions — independent robot mower specialists covering Lancashire, the Ribble Valley and the North West.
+Brochure site for Auto Lawn Solutions - independent robot mower specialists covering Lancashire, the Ribble Valley and the North West.
 
 Live site: [https://jcvandan.github.io/auto-lawn-solutions/](https://jcvandan.github.io/auto-lawn-solutions/)
 
@@ -22,4 +22,4 @@ npx --yes serve .
 
 ## Image credits
 
-Lawn and property photography is from [Unsplash](https://unsplash.com/) and is used as stand-in imagery until genuine Auto Lawn Solutions installation photos are available.
+Lawn and property photography is from [Unsplash](https://unsplash.com/). Product and installation placeholders are generated stand-in images until genuine Auto Lawn Solutions photography is available.

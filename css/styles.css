@@ -370,7 +370,7 @@ input {
   line-height: 0.95;
   font-weight: 500;
   letter-spacing: -0.04em;
-  max-width: 12ch;
+  max-width: 18ch;
 }
 
 .hero h1 span {
@@ -502,6 +502,7 @@ input {
   grid-template-columns: repeat(4, 1fr);
   gap: 0.85rem;
   margin-top: 2.5rem;
+  align-items: stretch;
 }
 
 .assess-item {
@@ -509,7 +510,10 @@ input {
   border: 1px solid var(--line);
   border-radius: var(--radius-sm);
   padding: 1.1rem 1rem;
-  min-height: 92px;
+  min-height: 108px;
+  height: 100%;
+  display: flex;
+  flex-direction: column;
 }
 
 .assess-item strong {
@@ -520,8 +524,11 @@ input {
 }
 
 .assess-item span {
+  display: block;
   font-size: 0.85rem;
   color: var(--muted);
+  margin-top: 0.25rem;
+  flex: 1;
 }
 
 /* ---------- Brands ---------- */
@@ -530,6 +537,7 @@ input {
   display: grid;
   grid-template-columns: repeat(2, 1fr);
   gap: 1.1rem;
+  align-items: stretch;
 }
 
 .brand-card {
@@ -539,6 +547,9 @@ input {
   padding: 1.5rem 1.5rem 1.35rem;
   text-decoration: none;
   transition: transform 0.2s ease, box-shadow 0.2s ease;
+  height: 100%;
+  display: flex;
+  flex-direction: column;
 }
 
 .brand-card:hover {
@@ -556,6 +567,8 @@ input {
 .brand-card p {
   color: var(--muted);
   font-size: 0.98rem;
+  flex: 1;
+  min-height: 4.8em;
 }
 
 .brand-card .more {
@@ -563,6 +576,8 @@ input {
   font-size: 0.85rem;
   font-weight: 600;
   color: var(--forest-3);
+  flex: 0 0 auto;
+  min-height: 0;
 }
 
 /* ---------- Property types ---------- */
@@ -579,6 +594,8 @@ input {
   border-radius: var(--radius);
   overflow: hidden;
   color: var(--cream);
+  height: 100%;
+  min-height: 0;
 }
 
 .type-card:first-child {
@@ -586,6 +603,8 @@ input {
 }
 
 .type-card img {
+  position: absolute;
+  inset: 0;
   width: 100%;
   height: 100%;
   object-fit: cover;
@@ -614,6 +633,7 @@ input {
   grid-template-columns: repeat(5, 1fr);
   gap: 1rem;
   counter-reset: step;
+  align-items: stretch;
 }
 
 .step {
@@ -621,7 +641,10 @@ input {
   border-radius: var(--radius);
   padding: 1.4rem 1.2rem 1.3rem;
   border: 1px solid var(--line);
-  min-height: 220px;
+  min-height: 240px;
+  height: 100%;
+  display: flex;
+  flex-direction: column;
 }
 
 .step::before {
@@ -643,6 +666,7 @@ input {
 .step p {
   font-size: 0.92rem;
   color: var(--muted);
+  flex: 1;
 }
 
 /* ---------- Survey teaser ---------- */
@@ -650,11 +674,12 @@ input {
 .survey-band {
   display: grid;
   grid-template-columns: 1.15fr 0.85fr;
-  gap: 2rem;
+  gap: 0;
   background: var(--forest);
   color: var(--cream);
   border-radius: 28px;
   overflow: hidden;
+  align-items: stretch;
 }
 
 .survey-band-copy {
@@ -692,13 +717,15 @@ input {
 }
 
 .survey-band-photo {
-  min-height: 320px;
+  min-height: 100%;
+  height: 100%;
 }
 
 .survey-band-photo img {
   width: 100%;
   height: 100%;
   object-fit: cover;
+  display: block;
 }
 
 /* ---------- Case studies ---------- */
@@ -707,6 +734,7 @@ input {
   display: grid;
   grid-template-columns: repeat(2, 1fr);
   gap: 1.2rem;
+  align-items: stretch;
 }
 
 .case-card {
@@ -714,16 +742,24 @@ input {
   border-radius: 22px;
   overflow: hidden;
   border: 1px solid var(--line);
+  height: 100%;
+  display: flex;
+  flex-direction: column;
 }
 
 .case-card img {
   width: 100%;
-  height: 240px;
+  aspect-ratio: 16 / 10;
+  height: auto;
   object-fit: cover;
+  flex: 0 0 auto;
 }
 
 .case-body {
   padding: 1.4rem 1.4rem 1.5rem;
+  flex: 1;
+  display: flex;
+  flex-direction: column;
 }
 
 .case-body h3 {
@@ -731,12 +767,15 @@ input {
   font-size: 1.45rem;
   font-weight: 500;
   margin-bottom: 0.75rem;
+  min-height: 2.2em;
+  line-height: 1.15;
 }
 
 .case-meta {
   display: grid;
   gap: 0.55rem;
   font-size: 0.95rem;
+  flex: 1;
 }
 
 .case-meta strong {
@@ -761,6 +800,7 @@ input {
   display: grid;
   grid-template-columns: 1fr 1fr;
   gap: 0.8rem;
+  align-items: stretch;
 }
 
 .pillar {
@@ -768,6 +808,9 @@ input {
   border-radius: var(--radius-sm);
   padding: 1.15rem;
   border: 1px solid var(--line);
+  height: 100%;
+  display: flex;
+  flex-direction: column;
 }
 
 .pillar h3 {
@@ -778,6 +821,7 @@ input {
 .pillar p {
   font-size: 0.9rem;
   color: var(--muted);
+  flex: 1;
 }
 
 .final-cta {
@@ -848,6 +892,7 @@ input {
   display: grid;
   grid-template-columns: repeat(3, 1fr);
   gap: 1.1rem;
+  align-items: stretch;
 }
 
 .product-card {
@@ -857,30 +902,23 @@ input {
   border: 1px solid var(--line);
   display: flex;
   flex-direction: column;
+  height: 100%;
 }
 
 .product-visual {
   position: relative;
-  height: 210px;
+  aspect-ratio: 4 / 3;
+  height: auto;
+  flex: 0 0 auto;
   background: var(--forest-2);
-  display: grid;
-  place-items: center;
-  color: var(--sage-soft);
+  overflow: hidden;
 }
 
 .product-visual img {
   width: 100%;
   height: 100%;
   object-fit: cover;
-  opacity: 0.72;
-}
-
-.product-visual .mower-mark {
-  position: absolute;
-  width: 180px;
-  height: auto;
-  filter: brightness(1.25);
-  pointer-events: none;
+  object-position: center;
 }
 
 .pillars-four {
@@ -910,19 +948,23 @@ input {
 
 .product-body h3 {
   font-size: 1.12rem;
+  line-height: 1.25;
+  min-height: 2.5em;
 }
 
-.product-body p {
+.product-body p:not(.price) {
   color: var(--muted);
   font-size: 0.92rem;
   flex: 1;
+  min-height: 4.4em;
 }
 
 .price {
   font-family: "Fraunces", Georgia, serif;
   font-size: 1.35rem;
   color: var(--forest);
-  margin-top: 0.4rem;
+  margin-top: auto;
+  padding-top: 0.4rem;
 }
 
 .price small {
@@ -973,6 +1015,7 @@ input {
 .detail-list {
   display: grid;
   gap: 1rem;
+  align-items: stretch;
 }
 
 .detail {
@@ -980,6 +1023,9 @@ input {
   border: 1px solid var(--line);
   border-radius: var(--radius);
   padding: 1.3rem 1.4rem;
+  height: 100%;
+  display: flex;
+  flex-direction: column;
 }
 
 .detail h3 {
@@ -1001,8 +1047,45 @@ input {
   margin-top: 1.5rem;
 }
 
-.mailto-box h3 {
-  margin-bottom: 0.4rem;
+.area-list {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 0.5rem;
+  list-style: none;
+  margin: 1.4rem 0 0;
+  padding: 0;
+}
+
+.area-list li {
+  background: var(--paper);
+  border: 1px solid var(--line);
+  border-radius: 999px;
+  padding: 0.4rem 0.9rem;
+  font-size: 0.92rem;
+  color: var(--forest);
+}
+
+.faq-list {
+  display: grid;
+  gap: 0.85rem;
+}
+
+.faq-list details {
+  background: var(--paper);
+  border: 1px solid var(--line);
+  border-radius: var(--radius-sm);
+  padding: 1rem 1.15rem;
+}
+
+.faq-list summary {
+  cursor: pointer;
+  font-weight: 600;
+  color: var(--forest);
+}
+
+.faq-list p {
+  margin-top: 0.7rem;
+  color: var(--muted);
 }
 
 /* ---------- Footer ---------- */
@@ -1026,7 +1109,8 @@ input {
   color: var(--cream);
 }
 
-.site-footer h2 {
+.site-footer h2,
+.footer-tagline {
   font-family: "Fraunces", Georgia, serif;
   font-size: 1.8rem;
   font-weight: 500;
@@ -1121,6 +1205,10 @@ input {
     grid-template-columns: repeat(2, 1fr);
   }
 
+  .survey-band-photo {
+    min-height: 280px;
+  }
+
   .types {
     grid-template-columns: 1fr 1fr;
     grid-template-rows: 220px 180px 180px;
@@ -1205,12 +1293,19 @@ input {
     grid-template-rows: none;
   }
 
-  .type-card,
-  .type-card img,
+  .type-card {
+    min-height: 240px;
+    height: 240px;
+  }
+
   .photo-frame,
   .photo-frame img {
     min-height: 240px;
     height: 240px;
+  }
+
+  .survey-band-photo {
+    min-height: 240px;
   }
 
   .survey-band-copy {
