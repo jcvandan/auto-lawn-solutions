@@ -92,11 +92,10 @@ input {
   position: sticky;
   top: 0;
   z-index: 50;
-  height: var(--header-h);
+  min-height: var(--header-h);
   display: flex;
   align-items: center;
-  background: rgba(246, 241, 232, 0.88);
-  backdrop-filter: blur(16px);
+  background: var(--cream);
   border-bottom: 1px solid transparent;
   transition: background 0.25s ease, border-color 0.25s ease, box-shadow 0.25s ease;
 }
@@ -113,6 +112,7 @@ input {
   align-items: center;
   justify-content: space-between;
   gap: 1.5rem;
+  padding-block: 0.45rem;
 }
 
 .brand {
@@ -124,8 +124,12 @@ input {
 }
 
 .brand img {
-  width: 42px;
-  height: 42px;
+  width: 150px;
+  height: 98px;
+  flex: 0 0 auto;
+  object-fit: cover;
+  object-position: center 46%;
+  mix-blend-mode: multiply;
 }
 
 .brand-text {
@@ -1104,6 +1108,12 @@ input {
   border-bottom: 1px solid rgba(246, 241, 232, 0.12);
 }
 
+.site-footer .brand img {
+  mix-blend-mode: normal;
+  background: #fff;
+  border-radius: 8px;
+}
+
 .site-footer .brand-text strong,
 .site-footer .brand-text span {
   color: var(--cream);
@@ -1232,7 +1242,7 @@ input {
   .nav {
     display: none;
     position: absolute;
-    top: var(--header-h);
+    top: 100%;
     left: 0;
     right: 0;
     background: var(--cream);

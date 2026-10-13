@@ -1,0 +1,244 @@
+<!doctype html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width,initial-scale=1">
+<title>Auto Lawn Solutions — Homepage Concept</title>
+<style>
+:root{
+  --green:#173f2d;--green2:#24553e;--cream:#f6f1e7;--lime:#b7d64a;
+  --ink:#17231c;--muted:#66736a;--border:#dfe5df;--panel:#f4f6f3;
+}
+*{box-sizing:border-box}
+body{margin:0;font-family:Arial,Helvetica,sans-serif;color:var(--ink);background:white;line-height:1.5}
+a{text-decoration:none;color:inherit}
+button,input,select{font:inherit}
+.wrap{max-width:1180px;margin:0 auto;padding:0 20px}
+.serif{font-family:Georgia,'Times New Roman',serif}
+header{border-bottom:1px solid rgba(0,0,0,.08);background:#fff}
+.header{display:flex;gap:18px;align-items:center;justify-content:space-between;padding:16px 20px}
+.brand strong{display:block;font:700 24px Georgia,serif;color:var(--green)}
+.brand span{font-size:12px;color:var(--muted)}
+nav{display:flex;gap:24px;font-size:14px;font-weight:700}
+.btn{display:inline-flex;align-items:center;justify-content:center;min-height:46px;border-radius:999px;padding:0 20px;font-weight:700;border:1px solid var(--green);cursor:pointer;background:white;color:var(--green)}
+.btn-primary{background:var(--lime);border-color:var(--lime);color:#132016}
+.hero{background:var(--cream);padding:64px 0}
+.hero-grid{display:grid;grid-template-columns:1.08fr .92fr;gap:42px;align-items:center}
+.eyebrow{display:inline-block;border:1px solid rgba(23,63,45,.18);background:rgba(255,255,255,.65);border-radius:999px;padding:7px 12px;color:var(--green);font-size:12px;font-weight:800;letter-spacing:.08em;text-transform:uppercase}
+h1{font:700 58px/1.03 Georgia,serif;color:var(--green);margin:16px 0 18px}
+h2{font:700 38px/1.1 Georgia,serif;color:var(--green);margin:8px 0 12px}
+.lead{font-size:18px;max-width:680px;color:#435046}
+.actions{display:flex;gap:12px;flex-wrap:wrap;margin-top:28px}
+.ticks{display:grid;grid-template-columns:1fr 1fr;gap:10px;margin-top:28px;font-size:14px}
+.photo{min-height:340px;border-radius:24px;background:linear-gradient(145deg,#d8dfd7,#aebcae);position:relative;border:1px solid rgba(0,0,0,.08);overflow:hidden}
+.photo:after{content:'REPLACE WITH REAL INSTALLATION PHOTO';position:absolute;left:18px;right:18px;bottom:18px;background:rgba(255,255,255,.9);padding:10px 12px;border-radius:9px;font-size:11px;font-weight:800;letter-spacing:.08em;color:#264231}
+.dark{background:var(--green);color:#fff}
+.trust{display:grid;grid-template-columns:repeat(4,1fr);gap:20px;padding:26px 20px}
+.trust b{font-size:26px;display:block}
+.trust span{font-size:13px;color:rgba(255,255,255,.72)}
+section{padding:64px 0}
+.two-col{display:grid;grid-template-columns:.9fr 1.1fr;gap:38px;align-items:start}
+.kicker{font-size:12px;font-weight:800;letter-spacing:.09em;text-transform:uppercase;color:var(--green2)}
+.muted{color:var(--muted)}
+.finder{background:var(--panel);border:1px solid var(--border);border-radius:20px;padding:24px}
+.finder-head{display:flex;justify-content:space-between;gap:16px;margin-bottom:18px}
+.pill{border-radius:999px;background:white;padding:6px 10px;font-size:12px}
+.grid2{display:grid;grid-template-columns:1fr 1fr;gap:16px}
+label{display:block;font-size:14px;font-weight:700}
+input,select{width:100%;min-height:46px;margin-top:6px;border:1px solid var(--border);border-radius:10px;padding:10px 12px;background:white}
+.result{margin-top:16px;background:white;border:1px solid rgba(23,63,45,.14);border-radius:14px;padding:16px;display:none}
+.cards4{display:grid;grid-template-columns:repeat(4,1fr);gap:18px;margin-top:28px}
+.card{border:1px solid var(--border);border-radius:16px;padding:18px;background:#fff}
+.cream{background:var(--cream)}
+.steps{display:grid;grid-template-columns:repeat(3,1fr);gap:18px;margin-top:28px}
+.step{border-radius:16px;background:rgba(255,255,255,.08);padding:22px}
+.step .num{font-size:34px;font-weight:800;color:var(--lime)}
+.install-grid{display:grid;grid-template-columns:repeat(3,1fr);gap:18px;margin-top:28px}
+.install{border:1px solid var(--border);border-radius:16px;overflow:hidden}
+.install .photo{min-height:210px;border:0;border-radius:0}
+.install-body{padding:16px}
+.cta{background:var(--green);color:white;border-radius:22px;padding:34px}
+.cta h2{color:white}
+footer{border-top:1px solid var(--border);padding:28px 0;font-size:14px;color:var(--muted)}
+.note{font-size:12px;color:var(--muted);margin-top:10px}
+@media(max-width:900px){
+ nav{display:none}
+ .hero-grid,.two-col{grid-template-columns:1fr}
+ .trust,.cards4{grid-template-columns:1fr 1fr}
+ .steps,.install-grid{grid-template-columns:1fr}
+ h1{font-size:44px}
+}
+@media(max-width:560px){
+ .header{align-items:flex-start;flex-wrap:wrap}
+ .brand strong{font-size:21px}
+ .hero{padding:42px 0}
+ h1{font-size:38px}
+ h2{font-size:31px}
+ .ticks,.grid2,.trust,.cards4{grid-template-columns:1fr}
+ .btn{width:100%}
+ .actions{width:100%}
+ .photo{min-height:250px}
+}
+</style>
+</head>
+<body>
+<header>
+  <div class="header wrap">
+    <div class="brand"><strong>Auto Lawn Solutions</strong><span>Robot mower specialists • Lancashire & the North West</span></div>
+    <nav><a href="#mowers">Robot Mowers</a><a href="#finder">Mower Finder</a><a href="#installs">Installations</a><a href="#why">Why Us</a><a href="#contact">Contact</a></nav>
+    <a class="btn btn-primary" href="#survey">Free Lawn Survey</a>
+  </div>
+</header>
+
+<div class="hero">
+  <div class="wrap hero-grid">
+    <div>
+      <span class="eyebrow">Independent robot mower specialists</span>
+      <h1>The right robot mower for your lawn.</h1>
+      <p class="lead">Independent advice, supply, professional installation and local aftercare. From everyday gardens to large, sloping and challenging properties.</p>
+      <div class="actions"><a class="btn btn-primary" href="#finder">Find My Robot Mower</a><a class="btn" href="#survey">Book a Free Lawn Survey</a></div>
+      <div class="ticks"><span>✓ 10+ years groundcare experience</span><span>✓ Multi-brand recommendations</span><span>✓ Professional mapping & setup</span><span>✓ Local support after installation</span></div>
+    </div>
+    <div class="photo"></div>
+  </div>
+</div>
+
+<div class="dark">
+  <div class="wrap trust">
+    <div><b>10+ years</b><span>groundcare experience</span></div>
+    <div><b>Multi-brand</b><span>advice based on your lawn</span></div>
+    <div><b>Professional</b><span>installation & mapping</span></div>
+    <div><b>Local</b><span>aftercare & support</span></div>
+  </div>
+</div>
+
+<section id="finder">
+  <div class="wrap two-col">
+    <div>
+      <div class="kicker">Standout website feature</div>
+      <h2>Find your robot mower in around 2 minutes.</h2>
+      <p class="muted">Tell us about your lawn size, slopes, terrain, tree cover and layout. We’ll shortlist the machines best suited to your property and tell you the best next step.</p>
+      <p>✓ Filters unsuitable machines<br>✓ Matches technology to the lawn<br>✓ Straightforward lawns can move towards purchase<br>✓ Complex lawns become qualified survey/call leads</p>
+    </div>
+    <form id="finder-form" class="finder">
+      <div class="finder-head"><div><strong>Quick Mower Finder</strong><div class="muted" style="font-size:12px">Homepage prototype</div></div><span class="pill">2 minute journey</span></div>
+      <div class="grid2">
+        <label>Lawn size (m²)<input id="area" type="number" min="1" value="1800"></label>
+        <label>Maximum slope<select id="slope"><option value="10">Mostly flat</option><option value="20">10–20%</option><option value="35">20–35%</option><option value="50">Over 35%</option><option value="0">Not sure</option></select></label>
+        <label>Tree cover<select id="trees"><option value="low">Very little</option><option value="some">Some trees</option><option value="heavy">Heavy</option></select></label>
+        <label>Terrain<select id="terrain"><option value="flat">Flat / smooth</option><option value="moderate">Some uneven ground</option><option value="rough">Rough / challenging</option></select></label>
+      </div>
+      <button class="btn btn-primary" style="width:100%;margin-top:18px" type="submit">Show My Recommendation</button>
+      <div id="result" class="result"></div>
+    </form>
+  </div>
+</section>
+
+<section id="why" class="cream">
+  <div class="wrap">
+    <div style="max-width:800px;margin:0 auto;text-align:center">
+      <div class="kicker">Simple by design</div>
+      <h2>Robot mower specialists, not a mower shop.</h2>
+      <p class="muted">Modern robot mowers use different combinations of RTK, LiDAR, cameras, AWD and virtual boundaries. The important part isn’t having the most technology — it’s choosing the right technology for your lawn.</p>
+    </div>
+    <div class="cards4">
+      <div class="card"><strong>Advice</strong><p class="muted">Independent advice based on your lawn, requirements and budget.</p></div>
+      <div class="card"><strong>Supply</strong><p class="muted">Quality machines from a range of leading manufacturers.</p></div>
+      <div class="card"><strong>Setup</strong><p class="muted">Professionally mapped, configured, tested and handed over.</p></div>
+      <div class="card"><strong>Support</strong><p class="muted">Local help from someone who understands your machine and installation.</p></div>
+    </div>
+  </div>
+</section>
+
+<section id="mowers">
+  <div class="wrap">
+    <div class="kicker">Shop by lawn, not by badge</div>
+    <h2>What kind of property do you have?</h2>
+    <div class="cards4">
+      <div class="card"><strong>Domestic Gardens</strong><p class="muted">Simple, reliable automation for everyday lawns.</p></div>
+      <div class="card"><strong>Large Gardens</strong><p class="muted">Higher capacity machines with efficient systematic mowing.</p></div>
+      <div class="card"><strong>Slopes & Rough Ground</strong><p class="muted">AWD and higher-traction solutions for demanding terrain.</p></div>
+      <div class="card"><strong>Estates & Commercial</strong><p class="muted">Large-area and multi-zone solutions for bigger properties.</p></div>
+    </div>
+    <p class="note">Potential brands: Mammotion • Kress • Segway Navimow • Husqvarna. Only display authorised-dealer claims once confirmed.</p>
+  </div>
+</section>
+
+<section class="dark">
+  <div class="wrap">
+    <div style="text-align:center"><div class="kicker" style="color:rgba(255,255,255,.65)">How it works</div><h2 style="color:white">From lawn to robot in three simple steps.</h2></div>
+    <div class="steps">
+      <div class="step"><div class="num">01</div><strong>Tell us about your lawn</strong><p>Use the Mower Finder, upload photos or request a lawn survey.</p></div>
+      <div class="step"><div class="num">02</div><strong>We recommend the right machine</strong><p>We compare lawn size, slopes, terrain, tree cover, layout and technology.</p></div>
+      <div class="step"><div class="num">03</div><strong>We install & support it</strong><p>Mapping, setup, handover and local aftercare are all part of the service.</p></div>
+    </div>
+  </div>
+</section>
+
+<section id="installs">
+  <div class="wrap">
+    <div class="kicker">Proof, not stock photos</div>
+    <h2>Recent installations.</h2>
+    <p class="muted">Use genuine Auto Lawn Solutions jobs here. Each one should explain the property, challenge, mower choice and result.</p>
+    <div class="install-grid">
+      <article class="install"><div class="photo"></div><div class="install-body"><strong>Large country property</strong><div class="muted">Large lawn • uneven ground • AWD solution</div></div></article>
+      <article class="install"><div class="photo"></div><div class="install-body"><strong>Multi-zone garden</strong><div class="muted">Multiple areas • virtual boundaries • precision mapping</div></div></article>
+      <article class="install"><div class="photo"></div><div class="install-body"><strong>Customer lawn result</strong><div class="muted">Finished cut • customer feedback • real result</div></div></article>
+    </div>
+  </div>
+</section>
+
+<section class="cream">
+  <div class="wrap two-col">
+    <div><div class="kicker">Advice & guides</div><h2>Keep the homepage simple. Put the detail here.</h2><p class="muted">Educational pages can explain RTK, LiDAR, vision, AWD, virtual boundaries and lawn sizing without cluttering the main buying journey.</p></div>
+    <div class="card"><strong>Suggested guides</strong><p>RTK vs LiDAR — what does your garden need?</p><p>How steep is too steep?</p><p>How to measure your lawn using Google Earth</p><p>Robot mowers for trees, shade and difficult GPS areas</p></div>
+  </div>
+</section>
+
+<section id="survey">
+  <div class="wrap">
+    <div class="cta">
+      <div class="kicker" style="color:rgba(255,255,255,.65)">Not sure where to start?</div>
+      <h2>Start with a free lawn assessment.</h2>
+      <p style="max-width:720px;color:rgba(255,255,255,.78)">Send us your postcode, approximate lawn size and a few photos. We can often give you a strong initial recommendation remotely and tell you whether a site visit would be useful.</p>
+      <div class="actions"><a class="btn btn-primary" href="#finder">Use the Mower Finder</a><button id="callback" class="btn" style="border-color:rgba(255,255,255,.4);color:white;background:transparent">Request a Call Back</button></div>
+      <div id="callback-note" class="note" style="color:rgba(255,255,255,.72)"></div>
+    </div>
+  </div>
+</section>
+
+<footer id="contact">
+  <div class="wrap"><strong style="font:700 20px Georgia,serif;color:var(--green)">Auto Lawn Solutions</strong><div>Advice • Supply • Installation • Support</div><div>Lancashire • Yorkshire • North West</div></div>
+</footer>
+
+<script>
+const form=document.getElementById('finder-form');
+form.addEventListener('submit',function(e){
+ e.preventDefault();
+ const area=Math.max(1,Number(document.getElementById('area').value)||1);
+ const slope=Number(document.getElementById('slope').value);
+ const trees=document.getElementById('trees').value;
+ const terrain=document.getElementById('terrain').value;
+ let complexity=0;
+ if(slope===0||slope>20) complexity++;
+ if(slope>35) complexity+=2;
+ if(trees==='heavy') complexity+=2;
+ if(terrain==='rough') complexity+=2;
+ if(area>5000) complexity+=2;
+ let size=area<=1000?'1,000 m² class':area<=3000?'3,000 m² class':area<=5000?'5,000 m² class':'large-area / commercial class';
+ let html='';
+ if(complexity<=1){
+   html='<b>Good online match</b><h3>'+size+'</h3><p>This looks relatively straightforward. The live site could show 1–3 suitable machines and allow a package-price request or purchase after final confirmation.</p>';
+ } else if(complexity<=4){
+   html='<b>Recommendation + quick check</b><h3>'+size+'</h3><p>There is a clear direction, but tree cover, slope or terrain should be checked before purchase. This becomes a strong warm lead for a call, photos or satellite assessment.</p>';
+ } else {
+   html='<b>Specialist assessment recommended</b><h3>Complex property</h3><p>This should not go straight to checkout. The best next step is a specialist assessment or site survey before specifying a machine.</p>';
+ }
+ const r=document.getElementById('result'); r.innerHTML=html; r.style.display='block';
+});
+document.getElementById('callback').addEventListener('click',function(){
+ document.getElementById('callback-note').textContent='Live version: open a short form for name, phone, postcode and preferred contact time, then send the lead into the CRM.';
+});
+</script>
+</body>
+</html>
