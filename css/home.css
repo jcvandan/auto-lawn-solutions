@@ -273,6 +273,10 @@ body.home .hp-muted {
   color: var(--hp-muted);
 }
 
+body.home .hp-two-col .hp-muted + .hp-muted {
+  margin-top: 12px;
+}
+
 body.home .hp-checks {
   margin: 16px 0 0;
   padding: 0;
