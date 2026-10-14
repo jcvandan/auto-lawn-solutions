@@ -14,7 +14,7 @@ npx --yes serve .
 
 ## Placeholders to replace
 
-- Email: `hello@autolawnsolutions.co.uk`
+- Email: `sales@autolawnsolutions.co.uk`
 - Phone: `01200 000000`
 - Facebook URL in the footer and contact page
 - Product photos and prices on `mowers.html`
