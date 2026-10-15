@@ -613,9 +613,9 @@ body.home .hp-footer .brand {
 }
 
 body.home .hp-footer .brand img {
-  width: 168px;
-  height: 110px;
-  object-position: center 46%;
+  width: 210px;
+  height: 101px;
+  object-position: left center;
 }
 
 body.home .hp-footer strong {
@@ -726,8 +726,8 @@ body.home .mobile-cta {
   }
 
   body.home .brand img {
-    width: 108px;
-    height: 70px;
+    width: 165px;
+    height: 79px;
   }
 
   body.home .brand-text {

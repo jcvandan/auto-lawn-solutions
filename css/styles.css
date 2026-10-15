@@ -124,12 +124,11 @@ input {
 }
 
 .brand img {
-  width: 150px;
-  height: 98px;
+  width: 185px;
+  height: 89px;
   flex: 0 0 auto;
-  object-fit: cover;
-  object-position: center 46%;
-  mix-blend-mode: multiply;
+  object-fit: contain;
+  object-position: left center;
 }
 
 .brand-text {
